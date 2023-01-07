@@ -1,0 +1,64 @@
+/*  ГОЛОВНА  або HERO  */
+
+.hero {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+    background-color: var(--brand-color-backgraund);   
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+    &__box {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        row-gap: 30px;
+    }
+    
+    &__title {
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;    
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--brand-color-hero);
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    
+    &__button { 
+        padding: 10px 24px;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--brand-color-hero);
+        background: var(--brand-color-button);
+        cursor: pointer;
+        transition: scaleX 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            transform: scaleX(1.03);
+            border: none;
+        }
+        
+        &:focus {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            transform: scaleX(1.03);
+            border: none;
+        }
+    }
+}
+
+/*  ГОЛОВНА  або HERO      end*/

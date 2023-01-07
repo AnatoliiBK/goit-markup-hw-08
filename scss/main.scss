@@ -1,0 +1,56 @@
+@import "./utils/fonts";
+
+@import "./base/base-styles";
+
+/*  змінні для кольорів  */
+@import "./utils/variables";
+
+@import "./layout/header";
+
+@import "./layout/navigation-header";
+
+@import "./pages/contacts-header";
+
+@import "./layout/sections/hero";
+
+@import "./layout/sections/features";
+
+@import "./layout/sections/busi";
+
+@import "./layout/sections/team";
+
+@import "./layout/sections/clients";
+
+@import "./components/hidden-title";
+
+/*  НАША КОМАНДА картка  */
+@import "./components/team-badge";
+
+/*  НАША КОМАНДА  соціальні додатки в картці  */
+@import "./components/team-signs";
+
+@import "./layout/footer";
+
+@import "./layout/address";
+
+@import "./layout/forms";
+
+@import "./components/modal";
+
+/*  кнопки з MODAL  */
+@import "./components/buttons";
+
+@import "./layout/sections/portfolio";
+
+/*   картки з PORTFOLIO   */
+@import "./components/portfolio-card";
+
+
+
+
+
+
+
+
+
+

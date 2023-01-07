@@ -1,0 +1,26 @@
+/* НАША КОМАНДА */
+
+.team {
+    background: var(--brand-color-com);
+    
+    &__title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--brand-color-text);
+    }
+    
+    &__list { 
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;   
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* НАША КОМАНДА  end*/

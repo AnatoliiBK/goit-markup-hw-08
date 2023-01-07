@@ -1,0 +1,15 @@
+.header {
+    
+    background: var(--brand-color-hero);
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+    }
+    
+}

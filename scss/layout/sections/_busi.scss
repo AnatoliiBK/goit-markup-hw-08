@@ -1,0 +1,60 @@
+/* "ЧИМ МИ ЗАЙМАЄМОСЬ" або  BUSI  */
+
+.busi {
+    padding-top: 0;
+    
+    &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-text);
+    text-align: center;
+    }
+    
+    &__list {
+        margin-top: 0;
+        margin-bottom: 0;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+    }
+    
+    &__tumb {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+    }
+    
+    &__box {
+        padding-top: 27px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+    
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--brand-color-hero);
+    
+    }
+}
+
+ /* "ЧИМ МИ ЗАЙМАЄМОСЬ" або BUSI    end */

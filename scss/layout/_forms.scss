@@ -1,0 +1,115 @@
+.form-input {
+    position: relative;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__icon {
+        display: inline-block;
+        position: absolute; 
+        width: 18px;
+        height: 18px;   
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+    }
+    
+    &:hover, &:hover + .form-input__icon {
+        border-color: var(--brand-color-logo);
+        fill: var(--brand-color-logo);
+    }
+    
+    &:focus, &:focus + .form-input__icon {
+        border-color: var(--brand-color-logo);
+        fill: var(--brand-color-logo);
+    }
+}
+
+.form-area {
+    resize: none;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+    &:hover {
+        border-color: var(--brand-color-logo);
+    }
+    
+    &:focus {
+        border-color: var(--brand-color-logo);  
+    } 
+}
+
+
+.accept-terms {
+    display: flex;
+    align-items: center;
+    width: 425px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;  
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+    &:hover {
+        border-color: #188CE8;
+    }
+    
+    &:focus {
+        border-color: #188CE8;
+    }
+    
+    &__checkbox {
+        appearance: none;
+    }
+    
+    &__icon {
+        position: absolute;
+        border: 2px solid  var(--brand-color-text);
+        border-radius: 2px;
+        fill: none;   
+    }
+    
+    &__checkbox:hover + &__icon {
+        border-color: var(--brand-color-description);     
+    }
+    
+    &__checkbox:hover ~ &__label {
+        color: rgb(64, 83, 64);
+    }
+    
+    &__label {
+        position: relative;
+        padding-left: 35.88px;
+        
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--brand-color-description);
+    }
+    
+    
+    &__checkbox:checked + &__icon {
+        fill: var(--brand-color-hero);
+        background-color: var(--brand-color-logo);
+        border-color: var(--brand-color-logo);  
+    }
+    
+    &__checkbox:checked ~ &__label {
+        color: rgb(64, 83, 64);
+    } 
+    
+    
+    &__contract {
+       color: var(--brand-color-link);
+    }
+}
