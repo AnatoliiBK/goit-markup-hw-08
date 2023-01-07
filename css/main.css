@@ -17,11 +17,25 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*  змінні для кольорів  */
@@ -302,6 +316,11 @@ body {
 .busi {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .busi {
+    display: none;
+  }
+}
 .busi__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -379,6 +398,19 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
 
 /* НАША КОМАНДА  end*/
 /* КЛІЄНТИ  */
@@ -452,8 +484,19 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .badge {
+    -ms-flex-preferred-size: calc((100% - 40px) / 2);
+        flex-basis: calc((100% - 40px) / 2);
+  }
+}
 .badge__image {
   display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .badge__image {
+    width: 354px;
+  }
 }
 .badge__data {
   padding-top: 30px;
@@ -483,6 +526,12 @@ body {
   padding-right: 32px;
   padding-left: 32px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .badge__links {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
 }
 .badge__list {
   padding-left: 0;
