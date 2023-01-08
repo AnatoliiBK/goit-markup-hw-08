@@ -12,8 +12,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -380,25 +380,23 @@ body {
 .team__title {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-text);
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -409,6 +407,16 @@ body {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -478,24 +486,43 @@ body {
 
 /*  НАША КОМАНДА картка  */
 .badge {
-  width: 270px;
+  width: 450px;
   background: var(--brand-color-hero);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+}
+.badge:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .badge {
-    -ms-flex-preferred-size: calc((100% - 40px) / 2);
-        flex-basis: calc((100% - 40px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .badge {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+    margin-bottom: 0;
   }
 }
 .badge__image {
   display: block;
+  width: 450px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .badge__image {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .badge__image {
+    width: 270px;
   }
 }
 .badge__data {
@@ -523,14 +550,23 @@ body {
 }
 .badge__links {
   height: 44px;
-  padding-right: 32px;
-  padding-left: 32px;
-  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .badge__links {
+    padding-right: 122px;
+    padding-left: 122px;
+  }
+}
+@media screen and (min-width: 768px) {
   .badge__links {
     padding-right: 74px;
     padding-left: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .badge__links {
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 .badge__list {
