@@ -1,6 +1,12 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 
+<symbol id="icon-cross" viewBox="0 0 16 16">
+<path d="M11.867 5.152l-0.752-0.752-2.981 2.981-2.981-2.981-0.752 0.752 2.981 2.981-2.981 2.981 0.752 0.752 2.981-2.981 2.981 2.981 0.752-0.752-2.981-2.981 2.981-2.981z"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 16 16">
+<path d="M3.2 5.867v-1.067h9.6v1.067h-9.6zM3.2 8.533h9.6v-1.067h-9.6v1.067zM3.2 11.2h9.6v-1.067h-9.6v1.067z"></path>
+</symbol>
 <symbol id="icon-send" viewBox="0 0 15 16">
 <path d="M15.36 0.029l-15.36 8.637 4.909 1.817 7.571-7.096-5.759 7.767 0.005 0.002-0.006-0.002v4.229l2.753-3.21 3.487 1.291 2.4-13.435z"></path>
 </symbol>
