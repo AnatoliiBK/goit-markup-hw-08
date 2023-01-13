@@ -7,7 +7,8 @@
     background: var(--brand-color-backgraund);
     
     &__base {
-
+        
+        
         @media screen and (min-width: "1200px") {
             display: flex;
             justify-content: space-between;
@@ -16,7 +17,20 @@
     
     }
 
-    &__contacts {}
+    &__location {
+        @media screen and (min-width: "768px") {
+           display: flex;
+           justify-content: space-around;
+           align-items: baseline;
+           
+        }
+
+        @media screen and (min-width: "1200px") {
+            column-gap: 70px; 
+        }
+    }
+
+    
     
     &__logo-f {
         display: block;
@@ -136,8 +150,15 @@
             width: 450px;
         }
 
+        @media screen and (min-width: "768px") {
+           margin-right: auto;
+           margin-left: auto;  
+        }
+
         @media screen and (min-width: "1200px") {
             width: 570px;
+            margin-right: 0;
+            margin-left: 0;
         }
     }
     

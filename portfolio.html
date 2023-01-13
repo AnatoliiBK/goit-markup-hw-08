@@ -19,8 +19,8 @@
                 <nav class="navigation">
                     <a href="./index.html" lang="en" class="navigation__logo-f">Web<span class="navigation__logo-s">Studio</span></a>
                     <ul class="navigation__menu">
-                        <li><a href="./index.html" class="navigation__link">Студія</a></li>
-                        <li><a href="./portfolio.html" class="navigation__link navigation__link--current">Портфоліо</a></li>
+                        <li><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
+                        <li><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
                         <li><a href="" class="navigation__link">Контакти</a></li>
                     </ul>
                 </nav>
@@ -52,6 +52,12 @@
                     </li>
 
                 </ul>
+
+                <button type="button" class="menu-button is-open">
+                    <svg width="40" height="40" aria-label="Мобільне меню">                        
+                        <use class="menu-button__menu" href="./img/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -72,6 +78,7 @@
                       
                     <ul class="portfolio__content">
                         <li class="card">
+                            <a href="" class="card__link">
                             <div class="card__tumb">
                                 <img class="card__image" src="./img/img1p.jpg" alt="Технокряк Веб-сайт " width="370">
                             
@@ -81,9 +88,10 @@
                                 <h2 class="card__title">Технокряк</h2>
                                 <p class="card__text">Веб-сайт</p>
                             </div>
-                              
+                            </a>  
                         </li>
                         <li class="card">
+                            <a href="" class="card__link">
                             <div class="card__tumb">
                                 <img class="card__image" src="./img/img2p.jpg" alt="Постер New Orlean vs Golden Star Дизайн " width="370">
                             
@@ -93,6 +101,7 @@
                                 <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
                                 <p class="card__text">Дизайн</p>
                             </div>
+                            </a>
                         </li>
                         <li class="card">
                             <div class="card__tumb">
@@ -183,7 +192,7 @@
     <footer class="footer">
 
         <div class="container footer__base">
-            
+            <div class="footer__location">
             <div class="footer__contacts">
                 <a href="" lang="en" class="footer__logo-f">Web<span class="footer__logo-s">Studio</span></a>
                 <address class="footer__address">
@@ -230,11 +239,12 @@
                     </li>
                 </ul>
             </div>
-            
+            </div>
             <form class="footer__form">
                 <h3 class="footer__form-title">Підпишіться на розсилку</h3>
-                <label for="email" class="footer__label"></label>
                 <div class="footer__box">
+                    <label for="email" class="footer__label"></label>
+                
                     <input type="email" name="" id="email" class="footer__input" placeholder="E-mail">
                     <button type="button" class="footer__button">Підписатися
                         <svg class="footer__icon" width="24" height="24">
