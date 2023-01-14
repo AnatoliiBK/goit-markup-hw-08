@@ -52,13 +52,19 @@
 .accept-terms {
     display: flex;
     align-items: center;
-    width: 425px;
+    width: 370px;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;  
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: "1200px") {
+        width: 425px;
+        font-size: 14px;
+        line-height: 1.71;     
+    }
     
     &:hover {
         border-color: #188CE8;
@@ -90,11 +96,21 @@
     &__label {
         position: relative;
         padding-left: 35.88px;
-        
-        font-size: 14px;
-        line-height: 1.71;
+        width: 290px;
+        font-size: 12px;
+        line-height: 1.166;
         letter-spacing: 0.03em;
         color: var(--brand-color-description);
+
+        @media screen and (min-width: "480px") {
+            width: 370px; 
+        }
+
+        @media screen and (min-width: "1200px") {
+            width: 425px;
+            font-size: 14px;
+            line-height: 1.71; 
+        }
     }
     
     
