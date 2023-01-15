@@ -92,8 +92,12 @@
      
         display: flex;
         align-items: center;
-        gap: 92px;
+        gap: 88px;
                   
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 92px;
     }
 
     

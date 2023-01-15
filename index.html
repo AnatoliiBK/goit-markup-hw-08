@@ -53,8 +53,8 @@
 
                 </ul>
 
-                <button type="button" class="menu-button is-open">
-                    <svg width="40" height="40" aria-label="Мобільне меню">                        
+                <button type="button" class="menu-button js-open-menu">
+                    <svg width="40" height="40">                        
                         <use class="menu-button__menu" href="./img/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
@@ -433,12 +433,13 @@
 
     </footer>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu js-menu-container">
         <div class="container">
-
-            <svg class="mobile-menu__cross" width="40" height="40" aria-label="Мобільне меню">
-                <use href="./img/icons.svg#icon-cross"></use>
-            </svg>
+            <button type="button" class="mobile-menu__button js-close-menu">
+                <svg class="mobile-menu__cross" width="40" height="40" aria-label="Мобільне меню">
+                    <use href="./img/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="mobile-menu__nav">
                     <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студія</a></li>
@@ -525,6 +526,9 @@
             </div>
         </div>
     </div>
+
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
+    
 </body>
 </html>
