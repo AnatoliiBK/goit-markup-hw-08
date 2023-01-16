@@ -275,6 +275,12 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero@2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -442,11 +448,12 @@ body {
 /* "ОСОБЛИВОСТІ" з прхованим заголовком або FEATURES     end*/
 /* "ЧИМ МИ ЗАЙМАЄМОСЬ" або  BUSI  */
 .busi {
+  display: none;
   padding-top: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .busi {
-    display: none;
+    display: block;
   }
 }
 .busi__title {
